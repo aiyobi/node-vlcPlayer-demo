@@ -7,7 +7,7 @@ Demo for [wcjs-player](https://github.com/jaruba/wcjs-player) showing WebChimera
 #### Demo Install
 
 ```
-git clone https://github.com/jaruba/node-vlcPlayer-demo.git
+git clone https://github.com/aiyobi/node-vlcPlayer-demo.git
 cd node-vlcPlayer-demo
 ```
 
