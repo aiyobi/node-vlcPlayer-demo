@@ -21,7 +21,7 @@ npm install electron@1.7.9
 ```
 set WCJS_RUNTIME=electron
 set WCJS_RUNTIME_VERSION=v1.4.13
-set WCJS_VERSION=0.2.7
+set WCJS_VERSION=v0.2.7
 set WCJS_ARCH=x64
 npm install
 ```
@@ -30,7 +30,7 @@ npm install
 ```
 export WCJS_RUNTIME="electron"
 export WCJS_RUNTIME_VERSION="v1.4.13"
-export WCJS_VERSION="0.2.7"
+export WCJS_VERSION="v0.2.7"
 export WCJS_ARCH="x64"
 npm install
 ```
