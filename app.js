@@ -1,8 +1,9 @@
 if (process.platform == 'win32')
     process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, 'node_modules/wcjs-prebuilt/bin/plugins');
 
-var app = require('app');  // Module to control application life.
-var BrowserWindow = require('browser-window');  // Module to create native browser window.
+const electron = require('electron');
+const app = electron.app;  // Module to control application life.
+const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
  
 var mainWindow = null;
  
@@ -15,7 +16,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 800, height: 600});
  
   // and load the index.html of the app.
-  mainWindow.loadUrl('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('file://' + __dirname + '/index.html');
  
   mainWindow.openDevTools({detach: true});
  

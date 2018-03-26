@@ -14,7 +14,9 @@ var player = new wjs("#player").addPlayer({
     wcjs: require('wcjs-prebuilt')
 });
 
-player.addPlaylist("http://archive.org/download/CartoonClassics/Krazy_Kat_-_Keeping_Up_With_Krazy.mp4");
+let mediaUri = "http://archive.org/download/CartoonClassics/Krazy_Kat_-_Keeping_Up_With_Krazy.mp4"
+// mediaUri = "file:///E:/work/yobi/data/samples/00003.MTS"
+player.addPlaylist(mediaUri);
 </script>
 </body>
 </html>
