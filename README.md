@@ -11,27 +11,35 @@ git clone https://github.com/jaruba/node-vlcPlayer-demo.git
 cd node-vlcPlayer-demo
 ```
 
+**Install electron v1.7.9
+
+```
+npm install electron@1.7.9
+```
+
 **Windows**
 ```
 set WCJS_RUNTIME=electron
-set WCJS_RUNTIME_VERSION=v0.37.6
-set WCJS_VERSION=0.2.5
-set WCJS_ARCH=ia32
+set WCJS_RUNTIME_VERSION=v1.4.13
+set WCJS_VERSION=0.2.7
+set WCJS_ARCH=x64
+npm install
 ```
 
 **OSX/Linux**
 ```
 export WCJS_RUNTIME="electron"
-export WCJS_RUNTIME_VERSION="v0.37.6"
-export WCJS_VERSION="0.2.5"
-export WCJS_ARCH="ia32"
-```
-
-```
+export WCJS_RUNTIME_VERSION="v1.4.13"
+export WCJS_VERSION="0.2.7"
+export WCJS_ARCH="x64"
 npm install
 ```
 
-Now download Electron v0.37.6 for 32bit and run `app.js`
+Now run `app.js`
+
+```
+    node_modules/electron/dist/electron.exe app.js
+```
 
 !! You can change the configuration values for `wcjs-prebuilt` according to your case, but keep in mind that the options are limited to the [prebuilt packages](https://github.com/RSATom/WebChimera.js/releases)
 
@@ -44,3 +52,10 @@ WebChimera.js Player running on NW.js (Windows)
 WebChimera.js Player running on Electron (Mac)
 
 <img src="http://webchimera.org/samples/wcjs-player-2.png">
+
+
+
+# Additional Steps (YobiAI)
+
+Replace `node_modules/wcjs-prebuilt/bin/WebChimera.js.node` file with the one provided in separate zip file
+
