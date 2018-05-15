@@ -1,4 +1,4 @@
-if (process.platform == 'win32')
+if ((process.platform == 'win32') || (process.platform == 'darwin'))
     process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, 'node_modules/wcjs-prebuilt/bin/plugins');
 
 const electron = require('electron');
